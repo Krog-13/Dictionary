@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="intro">
+     <div class="container">
+        <div class="intro_inner">
+            <h2 class="intro_title">Happy Hope</h2>
+        </div>
+        <div class="intro_table">
+            <table class="sub_table" border="1px">
+                <tr>
+                    <th></th>
+                    <th>past simple</th>
+                    <th>present simple</th>
+                    <th>future simple</th>
+                </tr>
+                <tr>
+                    <th>Вообще просто <br> происходит</th>
+                    <th>was/were</th>
+                    <th>am/is/are</th>
+                    <th>will be</th>
+                </tr>
+                <tr>
+                    <th>Есть результат</th>
+                    <th>был до тогда</th>
+                    <th>have/has been</th>
+                    <th>побуду до тогда</th>
+                </tr>
+
+            </table>
+            <div>
+                {% for i in tenses %}
+                <a href="{{ i.get_absolute_url }}">{{i.name}}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

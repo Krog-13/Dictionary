@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--/ Style-CSS -->
+    <link rel="stylesheet" href="{% static 'css/style_dict.css' %}" type="text/css" media="all">
+    <!--// Style-CSS -->
+
+    <title> {% block title %}{% endblock %} </title>
+</head>
+<body>
+    {% include 'include/header.html' %}
+
+    {% block content %}
+        <div class="container">
+        </div>
+    {% endblock content %}
+
+    {% include 'include/footer.html' %}
+
+</body>
+</html>
