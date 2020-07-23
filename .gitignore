@@ -8,7 +8,8 @@ idea
 
 dist
 db.sqlite3
-
+Dictionary/static/grappelli
+Dictionary/static/admin
 venv
 
 
